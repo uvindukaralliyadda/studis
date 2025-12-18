@@ -40,13 +40,13 @@ const Navbar = () => {
 
       <div className={`nav-right ${menuOpen ? 'open' : ''}`}>
         <ul>
-          <li><a href='#hero'>Home</a></li>
-          <li><a href='#products'>Categories</a></li>
-          <li><a href='#'>Gallery</a></li>
-          <li><a href='#'>About</a></li>
-          <li><a href='#'>Testimonials</a></li>
-          <li><a href='#'>Visit Facebook</a></li>
-          <li><a href='#'>Contact</a></li>
+          <li><a href='#hero' onClick={() => setMenuOpen(false)}>Home</a></li>
+          <li><a href='#products' onClick={() => setMenuOpen(false)}>Categories</a></li>
+          <li><a href='#' onClick={() => setMenuOpen(false)}>Gallery</a></li>
+          <li><a href='#' onClick={() => setMenuOpen(false)}>About</a></li>
+          <li><a href='#' onClick={() => setMenuOpen(false)}>Testimonials</a></li>
+          <li><a href='#' onClick={() => setMenuOpen(false)}>Visit Facebook</a></li>
+          <li><a href='#' onClick={() => setMenuOpen(false)}>Contact</a></li>
         </ul>
       </div>
     </nav>
