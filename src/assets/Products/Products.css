@@ -1,0 +1,112 @@
+#products {
+  scroll-margin-top: 90px; /* height of navbar */
+}
+
+.products{
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.products p, .products h2{
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    }
+
+.products p{
+    font-size: 25px;
+}
+
+.products h2{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #004768;
+}
+
+.product_cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.pro_card {
+    display: block;
+    flex-basis: 21px;
+    padding: auto auto;
+    margin-bottom: 35px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 71, 104, 0.6);
+    padding-bottom: 5px;
+}
+
+ img{
+    width: 250px;
+    height: auto;
+    
+}
+
+.pro_card p{
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 8px;
+    font-size:medium;
+    font-weight: 500;
+}
+
+
+.pro_card:hover img {
+    animation: pulse 2s infinite;
+    
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+
+/* Mobile responsive: 3 cards per row */
+@media (max-width: 768px) {
+    .products h2 {
+    font-size: 18px; /* smaller heading */
+    margin-bottom: 8px;
+  }
+
+  .products p {
+    font-size: 16px; /* smaller paragraph */
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .product_cards {
+    justify-content: center;
+    gap: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .pro_card {
+    flex: 0 1 calc(33.33% - 15px); /* 3 cards per row with gap */
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 71, 104, 0.5); /* slightly smaller shadow */
+  }
+
+  .pro_card img {
+    width: 100%; /* image scales to card */
+    height: auto;
+  }
+
+  .pro_card p {
+    font-size: 14px; /* smaller text for mobile */
+    margin-bottom: 5px;
+  }
+}
