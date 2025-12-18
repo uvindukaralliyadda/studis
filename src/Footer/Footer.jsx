@@ -37,7 +37,7 @@ const Footer = () => {
         <div className='social_images'>
         <img src={facebook}/>
         <img src={instagram}/>
-        <img src={instagram}/>
+        <img src={tiktok}/>
         </div>
       </div>
     </div>
